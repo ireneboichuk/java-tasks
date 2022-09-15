@@ -1,3 +1,4 @@
+import static  java.lang.System.*;
 public class Lesson2 {
     public static void main(String[] args) {
         byte testByte1, testByte2, testByte3, testByte4;
