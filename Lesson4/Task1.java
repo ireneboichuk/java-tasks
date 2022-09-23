@@ -2,7 +2,7 @@ package Lesson4;
 
 import static java.lang.System.out;
 
-// Task: Вивести табличку множення на 4
+//  Task: Вивести табличку множення на 4
 
 public class Task1 {
     public static void main(String[] args) {

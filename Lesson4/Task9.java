@@ -4,7 +4,7 @@ import java.util.Scanner;
 import static java.lang.System.in;
 import static java.lang.System.out;
 
-// Task: Реалізувати підрахунок факторіалу для введеного числа з консолі, використовуючи цикл for
+//  Task: Реалізувати підрахунок факторіалу для введеного числа з консолі, використовуючи цикл for
 
 public class Task9 {
     public static void main(String[] args) {

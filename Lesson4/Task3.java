@@ -2,7 +2,7 @@ package Lesson4;
 
 import static java.lang.System.out;
 
-// Task: Вивести на екран послідовність чисел: 1 2 4 8 16 32 64 128 256 512
+//  Task: Вивести на екран послідовність чисел: 1 2 4 8 16 32 64 128 256 512
 
 public class Task3 {
     public static void main(String[] args) {

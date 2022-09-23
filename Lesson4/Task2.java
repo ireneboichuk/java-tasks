@@ -4,7 +4,7 @@ import java.util.Scanner;
 import static java.lang.System.in;
 import static java.lang.System.out;
 
-//Task: Вивести на екран кожне сьоме число в діапазоні до заданої межі включно:
+// Task: Вивести на екран кожне сьоме число в діапазоні до заданої межі включно:
 
 public class Task2 {
     public static void main(String[] args) {
