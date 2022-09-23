@@ -9,7 +9,7 @@ import static java.lang.System.out;
 public class Task2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(in);
-        out.println("Введіть ціле число більше 7, щоб отримати кожне сьоме число в діапазоні до заданої межі:");
+        out.println("Введіть ціле число більше 7, щоб отримати кожне сьоме число в діапазоні до заданої межі: ");
         int number = sc.nextInt();
 
         if (number >= 7) {
