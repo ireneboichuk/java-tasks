@@ -6,7 +6,7 @@ import static java.lang.System.out;
 
 public class Task1 {
     public static void main(String[] args) {
-        out.println("Таблиця множення числа 4 з використанням циклу while:" );
+        out.println("Таблиця множення числа 4 з використанням циклу while:");
         int count = 0;
         while (count < 11) {
             out.println("4 * " + count + " = " + (4 * count));

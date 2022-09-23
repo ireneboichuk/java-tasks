@@ -19,6 +19,6 @@ public class Task4 {
         for (int i = 0; i <= 10; i++) {
             population += numberOfBirth - numberOfDead;
         }
-        out.println("Через 10 років кількість населення становитиме: " + population);
+        out.println("Через 10 років кількість населення буде становити: " + population);
     }
 }

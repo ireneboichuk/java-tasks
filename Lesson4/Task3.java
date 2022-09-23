@@ -6,7 +6,7 @@ import static java.lang.System.out;
 
 public class Task3 {
     public static void main(String[] args) {
-        out.println("Послідовність чисел, виведена за допомогою циклу for: ");
+        out.println("Послідовність чисел, виведена за допомогою циклу for:");
         int number = 2;
         int result;
         for(int exponent = 0; exponent < 10; exponent++) {
