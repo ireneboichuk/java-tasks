@@ -13,12 +13,11 @@ public class Task4 {
         int birthRate = 14;
         int mortalityRate = 8;
 
-        int numberOfBirth = (population / 1000) * birthRate;
-        int numberOfDead = (population / 1000) * mortalityRate;
-
         for (int i = 0; i <= 10; i++) {
+            int numberOfBirth = (population / 1000) * birthRate;
+            int numberOfDead = (population / 1000) * mortalityRate;
             population += numberOfBirth - numberOfDead;
         }
-        out.println("Через 10 років кількість населення становитиме:" + population);
+        out.println("Через 10 років кількість населення становитиме: " + population + " осіб");
     }
 }

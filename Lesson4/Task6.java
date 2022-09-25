@@ -14,7 +14,7 @@ public class Task6 {
 
         Scanner sc = new Scanner(in);
         out.println("Введіть значення суми вкладу:");
-        double deposit = sc.nextInt();
+        double deposit = sc.nextDouble();
         out.println("Введіть значення кількості місяців:");
         int months = sc.nextInt();
 

@@ -20,7 +20,7 @@ public class Task1 {
 
         out.println("Таблиця множення числа 4 з використанням циклу do-while:");
         int counter = 0;
-        do{
+        do {
             out.println("4 * " + counter + " = " + (4 * counter));
             counter++;
         } while(counter < 11);
