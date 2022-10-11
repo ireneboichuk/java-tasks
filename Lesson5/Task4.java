@@ -15,7 +15,7 @@ public class Task4 {
 
         out.println("Введіть масив цілих чисел в заданій раніше кількості:");
         for(int i = 0; i < testArray.length; i++) {
-            testArray[i]=sc.nextInt();
+            testArray[i] = sc.nextInt();
         }
 
         out.println("Введіть значення, яке потрібно знайти в масиві:");

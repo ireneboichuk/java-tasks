@@ -13,7 +13,7 @@ public class Task10 {
         out.println("Введіть кількість елементів першого масиву:");
         int sizeValue1 = sc.nextInt();
         int[] array1 = new int[sizeValue1];
-        out.println("Введіть перший масив цілих чисел в заданій раніше кількості:");
+        out.println("Введіть перший масив цілих чисел в кількості: " + sizeValue1);
         for (int i = 0; i < array1.length; i++) {
             array1[i] = sc.nextInt();
         }
@@ -21,7 +21,7 @@ public class Task10 {
         out.println("Введіть кількість елементів другого масиву:");
         int sizeValue2 = sc.nextInt();
         int[] array2 = new int[sizeValue2];
-        out.println("Введіть другий масив цілих чисел в заданій раніше кількості:");
+        out.println("Введіть другий масив цілих чисел кількості: " + sizeValue2);
         for (int i = 0; i < array2.length; i++) {
             array2[i] = sc.nextInt();
         }

@@ -14,20 +14,12 @@ public class Task11 {
         String value = sc.nextLine();
 
         String[] divided = value.split(" ");
-        int number = 0;
+        StringBuilder result =  new StringBuilder("");
         for (int i = 0; i < divided.length; i++) {
             if (divided[i].length() < 5) {
-               number++;
+                result.append(divided[i] + " ");
             }
         }
-
-        int j = 0;
-        String[] result = new String[number];
-        for (int i = 0; i < divided.length; i++) {
-            if (divided[i].length() < 5) {
-                result[j++] = divided[i];
-            }
-        }
-        out.println("Оновлене значення: " + Arrays.toString(result));
+        out.println("Оновлене значення: " + result.toString().trim());
     }
 }

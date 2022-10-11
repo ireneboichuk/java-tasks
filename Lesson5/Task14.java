@@ -28,6 +28,6 @@ public class Task14 {
                 result[j] = divided[i];
             }
         }
-        out.println("Оновлене значення рядка: " + Arrays.toString(result));
+        out.println("Оновлене значення: " + result.toString().trim());
     }
 }
