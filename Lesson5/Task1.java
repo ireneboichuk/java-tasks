@@ -13,7 +13,7 @@ public class Task1 {
         String value = sc.nextLine();
 
         if (value.matches("[0-9.]+")) {
-        out.println("Значення double: " + convertToDouble(value));
+            out.println("Значення double: " + convertToDouble(value));
         } else {
             out.println("Введене значення не є числом");
         }
