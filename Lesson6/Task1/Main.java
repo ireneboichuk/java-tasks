@@ -8,12 +8,12 @@ import static java.lang.System.in;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(in);
-        Rectangle newRectangle = new Rectangle();
-        newRectangle.print();
+        Rectangle.print();
         int length = sc.nextInt();
         int width = sc.nextInt();
+        Rectangle newRectangle = new Rectangle(length, width);
 
-        System.out.println(newRectangle.getPerimeter(length, width));
-        System.out.println(newRectangle.getArea(length, width));
+        System.out.println(newRectangle.getPerimeter());
+        System.out.println(newRectangle.getArea());
     }
 }

@@ -19,6 +19,6 @@ public class Main {
         int b = sc.nextInt();
         Point point2 = new Point(a, b);
 
-        System.out.println(point1.determineDistance(a, b));
+        System.out.println(point1.determineDistance(point2));
     }
 }

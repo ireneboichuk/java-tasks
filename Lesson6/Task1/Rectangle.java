@@ -1,33 +1,36 @@
 package Lesson6.Task1;
 
-import static java.lang.System.out;
-
 //Task: Створити клас прямокутник з полями довжина, ширина. Додати методи обчислення площі, периметру
 
-public class Rectangle {
+public class Rectangle extends Shape{
     private int length;
     private int width;
-    private final String printAddValues = "Введіть значення ширини та довжини прямокутника (в см):";
+    private static final String printAddValues = "Введіть значення ширини та довжини прямокутника (в см):";
 
-
-    public Rectangle() {
-    }
-
-    public void setRectangle(int length, int width) {
+    public Rectangle(int length, int width) {
         this.length = length;
         this.width = width;
     }
 
-    public void print() {
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public static void print() {
         System.out.println(printAddValues);
     }
 
-    public String getPerimeter(int length, int width) {
-        return "Периметр для введених значень довжини та ширини прямокутника, см: " + (2 * (length + width));
+    @Override
+    public String getPerimeter() {
+        return "Периметр для введених значень довжини та ширини прямокутника, см: " + (2 * (this.length + this.width));
     }
 
-    public String getArea(int length, int width) {
-        return "Площа для введених значень довжини та ширини прямокутника, см: " + (length * width);
+    @Override
+    public String getArea() {
+        return "Площа для введених значень довжини та ширини прямокутника, см: " + (this.length * this.width);
     }
-
 }

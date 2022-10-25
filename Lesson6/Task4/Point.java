@@ -26,9 +26,8 @@ public class Point {
         System.out.println(printAddValues2);
     }
 
-    public String determineDistance (int x, int y) {
-        double distance = Math.sqrt(Math.pow((x - this.x), 2) + Math.pow((y - this.y), 2));
+    public String determineDistance (Point point) {
+        double distance = Math.sqrt(Math.pow((point.x - this.x), 2) + Math.pow((point.y - this.y), 2));
         return "Відстань до іншого об'єкта: " + String.format("%.2f", distance);
     }
-
 }
