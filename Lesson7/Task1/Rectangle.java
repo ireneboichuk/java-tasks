@@ -3,36 +3,27 @@ package Lesson7.Task1;
 public class Rectangle extends Shape {
     private int length;
     private int width;
-    private int rectanglePerimeter;
-    private double rectangleArea;
 
     public Rectangle(int length, int width) {
         this.length = length;
         this.width = width;
     }
 
-    public void setLength(int length) {
-            this.length = length;
-        }
-    public void setWidth(int width) {
-            this.width = width;
-        }
-
+    @Override
     public double getPerimeter() {
-        rectanglePerimeter = 2 * (this.length + this.width);
-        return rectanglePerimeter;
+        return 2 * (this.length + this.width);
     }
 
+    @Override
     public double getArea() {
-        rectangleArea = this.length * this.width;
-        return rectangleArea;
+        return this.length * this.width;
     }
 
     @Override
     public String toString() {
         return (
-                "Периметр прямокутника, см: " + rectanglePerimeter +
-                ". Площа прямокутника, см: " + rectangleArea
+                "Периметр прямокутника, см: " + this.getPerimeter() +
+                ". Площа прямокутника, см: " + this.getArea()
         );
     }
 }

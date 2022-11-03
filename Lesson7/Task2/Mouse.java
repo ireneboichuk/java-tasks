@@ -9,18 +9,22 @@ public class Mouse extends Animal{
         this.age = age;
     }
 
+    @Override
     public String toRun() {
         return "Я біжу швидко, як мишка!";
     }
 
+    @Override
     public String toEat() {
         return  "Я їм багато свіжого зерна";
     }
 
+    @Override
     public String toSleep() {
         return "Я сплю мало";
     }
 
+    @Override
     public String toSpeak() {
         return "Я нічого не кажу :)";
     }

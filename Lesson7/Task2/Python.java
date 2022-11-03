@@ -9,18 +9,22 @@ public class Python extends Animal{
         this.age = age;
     }
 
+    @Override
     public String toRun() {
         return "Я повзу не дуже швидко";
     }
 
+    @Override
     public String toEat() {
         return  "Я їм багато свіжого м'яса";
     }
 
+    @Override
     public String toSleep() {
         return "Я сплю мало";
     }
 
+    @Override
     public String toSpeak() {
         return "Я нічого не кажу, як і миша";
     }

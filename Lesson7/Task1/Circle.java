@@ -2,33 +2,27 @@ package Lesson7.Task1;
 
 public class Circle extends Shape {
     private int radius;
-    private double circlePerimeter;
-    private double circleArea;
     private final static double PI = 3.14;
-
-    public void setRadius(int radius) {
-        this.radius = radius;
-    }
 
     public Circle(int radius) {
         this.radius = radius;
     }
 
+    @Override
     public double getPerimeter() {
-        circlePerimeter = 2 * PI * this.radius;
-        return circlePerimeter;
+        return 2 * PI * this.radius;
     }
 
+    @Override
     public double getArea() {
-        circleArea = PI * (Math.pow(this.radius, 2));
-        return circleArea;
+        return PI * (Math.pow(this.radius, 2));
     }
 
     @Override
     public String toString() {
         return (
-                "Периметр кола, см: " + String.format("%.2f", circlePerimeter) +
-                ". Площа кола, см: " + String.format("%.2f", circleArea)
+                "Периметр кола, см: " + String.format("%.2f", this.getPerimeter()) +
+                ". Площа кола, см: " + String.format("%.2f", this.getArea())
         );
     }
 }

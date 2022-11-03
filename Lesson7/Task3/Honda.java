@@ -14,14 +14,15 @@ public class Honda extends Car {
         this.engine = engine;
     }
 
+    @Override
     public void toStart() {
-        System.out.println("Машина заводиться і рушає");
+        System.out.println("Машина " + this.model + " заводиться і рушає");
     }
+    @Override
     public void toStop() {
-        System.out.println("Машина зупиняється");
+        System.out.println("Машина " + this.model + " зупиняється");
     }
 
-    @Override
     public String ToString() {
         return ("Машина: " + this.model + ". " + this.yearOfProduction + " року випуску. " + "Максимальна швидкість: "
                 + this.engine.maxSpeed());
