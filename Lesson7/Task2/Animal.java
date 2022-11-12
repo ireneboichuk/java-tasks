@@ -9,11 +9,12 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public Animal() {
-    }
-
     public abstract String toSleep();
     public abstract String toEat();
     public abstract String toRun();
+
     public abstract String toSpeak();
+    public String toString() {
+        return "Мене звуть " + this.name + ". Мені " + this.age + " років";
+    }
 }

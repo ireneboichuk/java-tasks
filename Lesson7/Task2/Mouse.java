@@ -5,8 +5,7 @@ public class Mouse extends Animal{
     private int age;
 
     public Mouse(String name, int age) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
     }
 
     @Override
@@ -27,10 +26,5 @@ public class Mouse extends Animal{
     @Override
     public String toSpeak() {
         return "Я нічого не кажу :)";
-    }
-
-    @Override
-    public String toString() {
-        return "Мене звуть " + this.name + ". Мені " + this.age + " років";
     }
 }

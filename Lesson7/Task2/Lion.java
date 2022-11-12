@@ -5,10 +5,8 @@ public class Lion extends Animal{
     private int age;
 
     public Lion(String name, int age) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
     }
-
     @Override
     public String toRun() {
         return "Я біжу швидко, як лев!";
@@ -27,10 +25,5 @@ public class Lion extends Animal{
     @Override
     public String toSpeak() {
         return "Я кажу - Грррр!";
-    }
-
-    @Override
-    public String toString() {
-        return "Мене звуть " + this.name + ". Мені " + this.age + " років";
     }
 }

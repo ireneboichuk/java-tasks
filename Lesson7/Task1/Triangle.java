@@ -24,9 +24,7 @@ public class Triangle extends Shape {
 
     @Override
     public String toString() {
-        return (
-                "Периметр трикутника, см: " + this.getPerimeter() +
-                ". Площа трикутника, см: " + this.getArea()
-        );
+        return "Периметр трикутника, см: " + this.getPerimeter() +
+                ". Площа трикутника, см: " + this.getArea();
     }
 }

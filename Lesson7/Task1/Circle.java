@@ -20,9 +20,7 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return (
-                "Периметр кола, см: " + String.format("%.2f", this.getPerimeter()) +
-                ". Площа кола, см: " + String.format("%.2f", this.getArea())
-        );
+        return "Периметр кола, см: " + String.format("%.2f", this.getPerimeter()) +
+                ". Площа кола, см: " + String.format("%.2f", this.getArea());
     }
 }

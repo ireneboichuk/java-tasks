@@ -21,10 +21,8 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return (
-                "Периметр прямокутника, см: " + this.getPerimeter() +
-                ". Площа прямокутника, см: " + this.getArea()
-        );
+        return  "Периметр прямокутника, см: " + this.getPerimeter() +
+                ". Площа прямокутника, см: " + this.getArea();
     }
 }
 

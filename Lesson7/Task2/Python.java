@@ -5,8 +5,7 @@ public class Python extends Animal{
     private int age;
 
     public Python(String name, int age) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
     }
 
     @Override
@@ -27,10 +26,5 @@ public class Python extends Animal{
     @Override
     public String toSpeak() {
         return "Я нічого не кажу, як і миша";
-    }
-
-    @Override
-    public String toString() {
-        return "Мене звуть " + this.name + ". Мені " + this.age + " років";
     }
 }
