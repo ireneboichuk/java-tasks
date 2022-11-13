@@ -1,7 +1,7 @@
 package Lesson8.Task2;
 
 public class Lion extends Animal implements AdditionalPossibilities {
-    private String name = "Лев";
+    private String name;
     private double weight;
     private int age;
 
