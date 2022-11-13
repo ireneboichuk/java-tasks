@@ -6,15 +6,14 @@ public class Mercedes extends Car{
     private int yearOfProduction;
 
     public Mercedes(String model, int yearOfProduction, CarEngine engine) {
-        this.model = model;
-        this.yearOfProduction = yearOfProduction;
-        this.engine = engine;
+        super(model, yearOfProduction, engine);
     }
 
     @Override
     public void toStart() {
         System.out.println("Машина " + this.model + " заводиться і рушає");
     }
+
     @Override
     public void toStop() {
         System.out.println("Машина " + this.model + " зупиняється");

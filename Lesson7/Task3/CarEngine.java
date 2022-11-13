@@ -1,5 +1,7 @@
 package Lesson7.Task3;
 
+import Lesson7.Task3.Car;
+
 public class CarEngine{
     private double engine;
     private int maxSpeed;
