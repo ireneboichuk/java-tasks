@@ -1,5 +1,7 @@
 package Lesson11;
 
+import java.io.IOException;
+
 public class B extends A{
     private int value1;
     private int value2;
@@ -9,9 +11,9 @@ public class B extends A{
     }
 
     @Override
-    public String divisionOperation(int value1, int value2) throws ArithmeticException {
+    public String divisionOperation(int value1, int value2) throws IOException {
         if (value2 == 0) {
-            throw new ArithmeticException("Ділити на нуль не можна!");
+            throw new IOException("Ділити на нуль не можна!");
         } else {
             return String.format("%.2f", (double) (value1 / value2));
         }

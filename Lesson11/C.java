@@ -9,9 +9,9 @@ public class C extends B{
     }
 
     @Override
-    public String divisionOperation(int value1, int value2) throws ArithmeticException {
+    public String divisionOperation(int value1, int value2) {
         if (value2 == 0) {
-            throw new ArithmeticException("Ділити на нуль не можна!");
+            return "Ділити на нуль не можна!";
         } else {
             return String.format("%.2f", (double) (value1 / value2));
         }

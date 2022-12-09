@@ -76,6 +76,6 @@ public class Main {
 
         C c = new C(value11, value22);
         A a = c;
-        out.println(a.divisionOperation(value11, value22));
+        out.println(c.divisionOperation(value11, value22));
     }
 }
