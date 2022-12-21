@@ -11,6 +11,7 @@ public class Main {
         додати в кінець таких символів ’*’ щоб довжина була 3. Вивести колекцію (з допомогою for-each).
          */
         String str = "Дано N цілих чисел. Знайти суму трицифрових чисел, що є серед даного набору чисел";
+        str = str.replaceAll("[^a-zA-Zа-яА-ЯіІїЇєЄҐґ ]", "");
         List<String> list = new ArrayList<>(List.of(str.split(" ")));
         System.out.println("Загальна кількість слів у Колеції #1: " + list.size());
 
