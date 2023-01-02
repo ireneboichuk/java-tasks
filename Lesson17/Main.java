@@ -15,14 +15,12 @@ public class Main {
                - Тільки позитивні числа цієї колекції записати в нову колекцію
          */
         
-        List<Integer> list = new ArrayList<>();
-        for (int i = 0; i <= 100; i++) {
-            list.add(new Random().nextInt(100));
-        }
-        Iterator<Integer> iter = list.iterator(); while(iter.hasNext()) {
-            Integer number = iter.next();
-            System.out.println(number);        // Виведення первинного вигляду Колекції рандомних чисел
-        }
+        List<Integer> list = IntStream.iterate(0, i -> new Random().nextInt(100))
+                .limit(100)
+                .boxed().toList();
+
+        Stream.of(list)
+                .forEach(System.out::println);    // Виведення первинного вигляду Колекції рандомних чисел
 
         int oddNumbersSum = list.stream()
                 .filter(number -> (number % 2) != 0)
@@ -46,13 +44,10 @@ public class Main {
         str = str.replaceAll("[^a-zA-Zа-яА-ЯіІїЇєЄҐґ ]", "");
         String[] list2 = str.split(" ");
 
-        Comparator<String> comparator = (i1, i2) -> (i1.length() - i2.length());
-
         List<String> sortedStringArray = Arrays.stream(list2)
-                .sorted(comparator)
+                .sorted(Comparator.comparingInt(String::length))
                 .toList();
         System.out.println("Відсортовані за довжиною слова: " + sortedStringArray);
-
 
 
         /*  Task 3: Припустимо, у нас є колекція, що складається з рядків: Arrays.asList(«Highload», «High», «Load», «Highload»)
