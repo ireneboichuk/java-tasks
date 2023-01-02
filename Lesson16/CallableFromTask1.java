@@ -17,7 +17,7 @@ public class CallableFromTask1 implements Callable<String> {
     @Override
     public String call() throws Exception{
         Random generator = new Random();
-        Integer randomNumber = generator.nextInt(100);
-        return (this.getName() + ": " + randomNumber);
+        int randomNumber = generator.nextInt(100);
+        return this.getName() + ": " + randomNumber;
     }
 }

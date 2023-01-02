@@ -13,10 +13,8 @@ public class OddNumberTask3 extends Thread{
     }
 
     private synchronized void getOddNumbers() {
-        for (int i = 0; i < 10; i++) {
-            if (i % 2 != 0) {
-                System.out.println(this.getName() + ": " + i);
-            }
+        for (int i = 1; i < 10; i += 2) {
+            System.out.println(this.getName() + ": " + i);
         }
         notify();
     }
