@@ -22,8 +22,7 @@ public class Main {
 
         List<String> text;
         try (BufferedReader bufferedReader2 = new BufferedReader(new FileReader(file1))) {
-                text = Arrays.stream(bufferedReader2.readLine().split(" ")).toList();
-                text = text.stream()
+                text = Arrays.stream(bufferedReader2.readLine().split(" "))
                         .filter(i -> (i.length() <= 5))
                         .collect(Collectors.toList());
         } catch (IOException e) {
@@ -31,8 +30,9 @@ public class Main {
         }
 
         try (FileWriter bufferedWriter2 = new FileWriter(file1, false)) {
-
             bufferedWriter2.write(text.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
